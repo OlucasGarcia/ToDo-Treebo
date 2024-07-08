@@ -1,16 +1,20 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .App {
-  text-align: center;
-  display: flex;
   flex-direction: column;
-  color: #ffffff;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .App-header {
   width: 100%;
-  height: 30px;
+  height: 60px;
   background: linear-gradient( to left , #99d4fb, #268bf0);
   color: #f1f1f1;
   display: flex;
@@ -37,14 +41,17 @@ h2 {
   min-width: 30%;
   height: 45px;
   margin: 10px;
+  place-content: center;
   background-color: rgb(70, 70, 255);
   color: #f1f1f1;
-  border: none;
   border-radius: 10px;
   font-size: 16px;
   font-weight: 700;
+  text-decoration: none;
 }
 
 body {
   background-color: #f1f1f1;
+  color: #ffffff;
+  text-align: center;
 }
