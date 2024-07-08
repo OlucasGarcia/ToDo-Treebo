@@ -1,9 +1,11 @@
 .hero {
-    width: 50%;
+    width: 90%;
     padding: 30px;
     border-radius: 20px;
     background: linear-gradient(to bottom right, #a3d6f5, #1f52bf);
     margin: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 .form {
