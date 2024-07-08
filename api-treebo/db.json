@@ -1,0 +1,28 @@
+{
+  "tarefas": [
+    {
+      "id": "1",
+      "title": "Exemplo de tarefa",
+      "desc": "Exemplo de descrição de tarefa",
+      "isCompleted": false
+    },
+    {
+      "id": "2",
+      "title": "Exemplo de tarefa 2",
+      "desc": "Exemplo de descrição de tarefa 2",
+      "isCompleted": false
+    },
+    {
+      "id": "3",
+      "title": "Exemplo de tarefa 3",
+      "desc": "Exemplo de descrição de tarefa 3",
+      "isCompleted": false
+    },
+    {
+      "id": "4",
+      "title": "Exemplo de tarefa 4",
+      "desc": "Exemplo de descrição de tarefa 4",
+      "isCompleted": false
+    }
+  ]
+}

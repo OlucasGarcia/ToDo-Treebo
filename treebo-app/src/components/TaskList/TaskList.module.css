@@ -1,5 +1,5 @@
 .listDiv {
-    width: 70%;
+    width: 100%;
     border-radius: 30px;
     padding: 20px;
     margin: 20px;
@@ -18,13 +18,14 @@
 }
 
 .listButton {
-    height: 40px;
-    width: 30%;
-    border: none;
+    height: 90px;
+    min-width: 50%;
     background: linear-gradient(to bottom right, #5fafe1, #1f52bf);
     color: #f1f1f1;
     border-radius: 30px;
     text-align: center;
     font-size: 14px;
     font-weight: 700;
+    text-decoration: none;
+    padding: 10px;
 }
