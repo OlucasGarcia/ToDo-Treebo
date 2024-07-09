@@ -2,7 +2,9 @@ import TaskNav from "../../components/Nav/TaskNav";
 
 const Home = () => {
     return (
-        <TaskNav/>
+        <body>
+            <TaskNav/>
+        </body>
     )
 };
 

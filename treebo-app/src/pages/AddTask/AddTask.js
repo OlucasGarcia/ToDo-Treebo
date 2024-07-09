@@ -6,11 +6,7 @@ const PagesAddTaks = () => {
     const { id } = useParams();
 
     return (
-        <div style={{
-            display: "flex",
-            justifyContent: "center",
-            width: "50%"
-        }}>
+        <div className="flex justify-center min-w-96">
             <AddTaskForm id={id ? Number.parseInt(id, 10) : null}/>
         </div>
     )
