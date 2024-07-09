@@ -26,6 +26,10 @@ const router = createBrowserRouter ([
       {
         path: "add-task",
         element: <PagesAddTaks/>
+      },
+      {
+        path: "edit-task/:id",
+        element: <PagesAddTaks/>
       }
     ]
   },
