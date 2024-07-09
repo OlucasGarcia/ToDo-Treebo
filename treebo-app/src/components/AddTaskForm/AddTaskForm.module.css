@@ -32,12 +32,13 @@
 }
 
 .buttonForm {
-    height: 30px;
-    width: 15%;
+    height: 35px;
+    width: 20%;
     align-self: center;
     cursor: pointer;
     border: none;
-    background-color: rgb(70, 70, 255);
+    background: linear-gradient(to bottom right, #5fe16e, #18a13f);
+    box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.556);
     color: #f1f1f1;
     border-radius: 30px;
     text-align: center;

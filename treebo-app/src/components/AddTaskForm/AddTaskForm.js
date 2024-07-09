@@ -1,17 +1,26 @@
 import styles from './AddTaskForm.module.css';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const inicialValue = {
     title: '',
     desc: '',
 }
 
-const AddTaskForm = () => {
+const AddTaskForm = ({ id }) => {
 
     const [values, setValues] = useState(inicialValue);
     const navigate = useNavigate();
+
+    useEffect(() => {
+        if(id) {
+            axios.get(`http://localhost:5000/tarefas/${id}`)
+            .then((response) => {
+                setValues(response.data);
+            })
+        }
+    }, [])
 
     function onChange(e) {
         const { name, value } = e.target;
@@ -22,9 +31,14 @@ const AddTaskForm = () => {
 
     function onSubmit(e) {
         e.preventDefault(); 
+
+        const method = id ? 'put' : 'post';
+        const url = id
+        ? `http://localhost:5000/tarefas/${id}`
+        : 'http://localhost:5000/tarefas'
         
 
-        axios.post('http://localhost:5000/tarefas', values)
+        axios[method](url, values)
         .then((response) => {
             navigate('/list');
         })
@@ -42,6 +56,7 @@ const AddTaskForm = () => {
                 className={styles.inputForm}
                 id="title" name="title"
                 onChange={onChange}
+                value={values.title}
                 />
                 <br />
                 
@@ -50,9 +65,10 @@ const AddTaskForm = () => {
                 className={styles.inputForm}
                 id="desc" name="desc"
                 onChange={onChange}
+                value={values.desc}
                 />
                 
-                <button type='submit' className={styles.buttonForm}>Criar tarefa</button>
+                <button type='submit' className={styles.buttonForm}>SALVAR TAREFA</button>
             
             </form>
         </div>
