@@ -3,11 +3,7 @@ import TaskList from "../../components/TaskList/TaskList";
 const PagesList = () => {
 
     return (
-        <div style={{
-            display: "flex",
-            justifyContent: "center",
-            width: "60%"
-        }}>
+        <div className="flex w-4/5 justify-center" >
             <TaskList/>
         </div>
     )
