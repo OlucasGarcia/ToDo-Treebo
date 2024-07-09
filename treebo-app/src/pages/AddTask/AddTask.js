@@ -1,6 +1,9 @@
+import { useParams } from "react-router-dom";
 import AddTaskForm from "../../components/AddTaskForm/AddTaskForm";
 
 const PagesAddTaks = () => {
+
+    const { id } = useParams();
 
     return (
         <div style={{
@@ -8,7 +11,7 @@ const PagesAddTaks = () => {
             justifyContent: "center",
             width: "50%"
         }}>
-            <AddTaskForm/>
+            <AddTaskForm id={id ? Number.parseInt(id, 10) : null}/>
         </div>
     )
 }
